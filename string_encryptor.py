@@ -4,7 +4,7 @@ if __name__ == "__main__":
     priv_key = Fernet.generate_key()
     print(priv_key)
 
-    message = "qdevebook"
+    message = input("Enter a string literall that you want to encrypt: ")
     msg_bin = message.encode()
 
     enc = Fernet(priv_key)
