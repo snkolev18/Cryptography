@@ -4,7 +4,7 @@ if __name__ == "__main__":
     priv_key = Fernet.generate_key()
     print(priv_key)
 
-    message = "Imam 200k leva vkushti i parolata za seifa e 1234"
+    message = "qdevebook"
     msg_bin = message.encode()
 
     enc = Fernet(priv_key)
